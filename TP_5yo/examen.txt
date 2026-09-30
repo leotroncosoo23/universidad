@@ -1,0 +1,33 @@
+1) falso, el void no devulve ninguna variable, se utiliza para ejecutar la funcion dentro de la misma y finalizarlo ahi
+
+2) #include <stdio.h> importamos el diccionario de C 
+void misterio(int vec[]) { inicia una funcion que trae un vetor del tipo entero 
+for(int i = 0; i < 3; i++) {inicia un bucle el cual crea una variable del tipo entero y recorre hasta q sea menor a 3 y realiza un incremento en 1 (este bucle nunca se inicia)
+vec[i] = vec[i] * 2; busca el elemento en la posicion del vector indicada y la multiplica por 2.., almacenandola en el mismo lugar de almacenamiento 
+} cierra el ciclo for
+} cierra la funcion void 
+
+int main() { inicializa la funcion principal que toma el lenguaje C
+int datos[3] = {1, 2, 3}; se crea un vector del tipo entero la cual contiene 3 elementos
+misterio(datos); llama a la funcion misterio y le pasa como parametro el vector datos
+printf("%d", datos[2]); imprime en pantalla el elemento almacenado en la posicion 2 del vector.., 
+return 0; devuelve el 0 a la funcion indicandoles que termine de ejecuitarse el programa
+} cierra la funcion main
+
+3)
+
+char palabra[5];
+for(int i = 0; i < 5; i++){
+
+    if (i == 0){
+        palabra[i] = 'H';
+    }else if ( i == 1){
+        palabra[i] = 'o';
+    }else if (i == 2){
+        palabra[i] = 'l';
+    }else if ( i == 3){
+        palabra[i] = 'a';
+    }else {
+        palabra[i] = '\0';   
+    }
+}

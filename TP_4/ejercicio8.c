@@ -11,7 +11,6 @@ void bolillero(int vec[]){
         int bolilla = (rand() % 20) + 1;
         vec[bolilla - 1]++;
     }
-
 }
 
 void resultado(int vec[]){
